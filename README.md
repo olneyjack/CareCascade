@@ -8,8 +8,38 @@ This repository provides the source code for the mathematical model described in
 #####  Source Code
 The directory `./src/` includes the code required for creating the model. The mathematical model is implemented in C++, but the compiled C++ code is not designed to be run natively. Simulations are run by calling the C++ code through the statistical language [R](https://www.r-project.org/). The relevant scripts for calling the model and running simulations are found in the directory `./scripts/`.
 
+##### 'CareCascade' R Package
+An R package entitled `CareCascade` has recently been released to aid compilation of the model. Follow the instructions below to install the package:
+```R
+# Install devtools from CRAN
+install.packages("devtools")
+
+# Install the 'CareCascade' package from github
+devtools::install_github("jackolney/R-Cascade")
+
+# Load the package
+require(CareCascade)
+
+# Run the model
+Cascade(
+     s_pop = 1000,
+     s_Hbct = 0,
+     s_Vct = 0,
+     s_HbctPocCd4 = 0,
+     s_Linkage = 0,
+     s_VctPocCd4 = 0,
+     s_PreOutreach = 0,
+     s_ImprovedCare = 0,
+     s_PocCd4 = 0,
+     s_ArtOutreach = 0,
+     s_Adherence = 0,
+     s_ImmediateArt = 0,
+     s_UniversalTestAndTreat = 0,
+     s_Calibration = 0)
+```
+
 ##### Compiling the Model
-To compile the model and access it through R has some platform specific requirements:
+Alternatively, the source code in this repository can be compiled locally. To compile the model and access it through R has some platform specific requirements:
 
 - For Unix / Mac OS X Users, ensure that that latest version of R is [installed](https://cran.r-project.org/src/base/R-3/) (v3.2.3 "Wooden Christmas-Tree" is the latest version, as of 10/12/2015), then follow the instructions below.
 
