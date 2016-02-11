@@ -14,7 +14,7 @@ setwd("~/git/CareCascade")
 # Load the compiled model as a shared object (ensure that 'main.so' is in the current directory)
 dyn.load("./main.so")
 
-# Set the population fraction denominator 
+# Set the population fraction denominator
 # (i.e. a larger number equals a faster simulation as the model simulates fewer individuals, but stochastic error is increased)
 # e.g. 1000 means the model simulates 1/1000th of the population of Kenya.
 popSize = 1000

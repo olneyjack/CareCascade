@@ -2,7 +2,7 @@
 #### C++ Model Repository
 
 This repository provides the source code for the mathematical model described in the manuscript: 
-- Olney JJ _et al._ Evaluating Strategies to Improve HIV Care Outcomes in Kenya. (submitted)
+- Olney JJ _et al._ Evaluating Strategies to Improve HIV Care Outcomes in Kenya. (under review)
 
 
 #####  Source Code
