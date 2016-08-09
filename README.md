@@ -1,8 +1,8 @@
 ## "Evaluating Strategies to Improve HIV Care Outcomes in Kenya"
 #### C++ Model Repository
 
-This repository provides the source code for the mathematical model described in the manuscript: 
-- Olney JJ _et al._ Evaluating Strategies to Improve HIV Care Outcomes in Kenya. (under review)
+This repository provides the source code for the mathematical model described in the manuscript:
+- Olney JJ _et al._ Evaluating Strategies to Improve HIV Care Outcomes in Kenya. The Lancet HIV [Accepted]
 
 
 #####  Source Code
@@ -44,7 +44,7 @@ Alternatively, the source code in this repository can be compiled locally. To co
 - For Unix / Mac OS X Users, ensure that that latest version of R is [installed](https://cran.r-project.org/src/base/R-3/) (v3.2.3 "Wooden Christmas-Tree" is the latest version, as of 10/12/2015), then follow the instructions below.
 
 - For Windows Users, ensure that the latest version of R is [installed](https://cran.r-project.org/bin/windows/base/), and also [Rtools](http://cran.r-project.org/bin/windows/Rtools/), then follow the instructions below.
- 
+
 Compiling the model to create an R shared object file can be done by using the following command in the `./src/` directory (note Windows uses replace `.so` with `.dll`:
 ```shell
 R CMD SHLIB -o main.so *.cpp
