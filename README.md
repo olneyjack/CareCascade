@@ -2,8 +2,7 @@
 #### C++ Model Repository
 
 This repository provides the source code for the mathematical model described in the manuscript:
-- Olney JJ _et al._ Evaluating Strategies to Improve HIV Care Outcomes in Kenya. The Lancet HIV [Accepted]
-
+- Olney JJ _et al._ [Evaluating strategies to improve HIV care outcomes in Kenya: a modelling study](http://dx.doi.org/10.1016/S2352-3018(16)30120-5). The Lancet HIV. 2016 Dec 31;3(12):e592-600.
 
 #####  Source Code
 The directory `./src/` includes the code required for creating the model. The mathematical model is implemented in C++, but the compiled C++ code is not designed to be run natively. Simulations are run by calling the C++ code through the statistical language [R](https://www.r-project.org/). The relevant scripts for calling the model and running simulations are found in the directory `./scripts/`.
